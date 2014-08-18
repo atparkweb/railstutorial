@@ -16,7 +16,7 @@
 /tmp
 
 # Ignore other unneeded files
-datanase.yml
+database.yml
 doc/
 *.swp
 *~
