@@ -1,6 +1,7 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
   root 'static_pages#home'
+
   match '/help', to: 'static_pages#help', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
@@ -10,7 +11,6 @@ SampleApp::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -18,7 +18,6 @@ SampleApp::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
 
   # Example resource route with options:
   #   resources :products do
